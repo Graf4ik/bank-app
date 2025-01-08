@@ -1,0 +1,35 @@
+.reference {
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right bottom, #0d121a, #1a282e, #2a403f, #44574d, #676d5a);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__title {
+        margin-top: 50px;
+    }
+
+    &__code {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #333333;
+        border-radius: 30px;
+
+        img {
+            cursor: pointer;
+            background-color: #000;
+            border-radius: 25px;
+            padding: 10px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

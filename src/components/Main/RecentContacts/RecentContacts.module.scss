@@ -1,0 +1,65 @@
+@import "@/assets/styles/global.scss";
+
+.recentContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #fff;
+
+    .recentTitle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .allContacts {
+        color: $font-primary;
+        cursor: pointer;
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+
+        .addContact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+            .addBtnName {
+                color: $font-primary; 
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 10px;
+                background-color: #fff;
+                border-radius: 25px;
+                border: 1px black dashed;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: grey;
+
+            .contactAvatar {
+                background-color: #F5F5F7;
+                border-radius: 25px;
+                margin-bottom: 10px;
+                padding: 2px;
+                width: 40px;
+            }
+        }
+    }
+}

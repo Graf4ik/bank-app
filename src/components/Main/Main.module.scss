@@ -1,0 +1,14 @@
+@import "@/assets/styles/global.scss";
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    .mainContent {
+      display: flex;
+      justify-content: space-between;
+      width: 65vw;
+    }
+}

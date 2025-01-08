@@ -1,0 +1,48 @@
+.card {
+    height: 150px;
+    width: 20vw;
+    background-image: linear-gradient(to left top, #362e33, #3b343a, #3f3b41, #434148, 
+    #48484f, #44464c, #404349, #3d4145, #313538, #262a2b, #1b1f1f, #111414);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 40px;
+    margin: 10px 15px;
+
+    &__block1 {
+        display: flex;
+        justify-content: space-between;
+
+        .owner {
+            font-size: 18px;
+        }
+    
+        .logo {
+            margin-right: 15px;
+        }
+    }
+
+    &__block2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .number {
+            letter-spacing: 2px;
+        }
+    
+        .cvv {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+            background-color: #333333;
+        }
+    }
+ 
+}

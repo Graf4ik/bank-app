@@ -1,0 +1,19 @@
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  padding-right: 20px;
+  background-color: #fff;
+  border-radius: 35px;
+
+  li {
+    cursor: pointer;
+    list-style-type: none;
+
+    &:hover {
+      color: #6e468f;
+    }
+  }
+}

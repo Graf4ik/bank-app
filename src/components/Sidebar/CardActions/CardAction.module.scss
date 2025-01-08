@@ -1,0 +1,62 @@
+@import "@/assets/styles/global.scss";
+
+ul {
+  .listItem {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    .icon {
+      background: #f4f4f4;
+      border-radius: 25px;
+      margin: 20px 20px 0 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    .cardTitle {
+      margin-top: 15px;
+    }
+
+    .arrowIcon {
+      width: 15px;
+      height: 15px;
+      margin-left: auto;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+
+  img {
+    width: 25px;
+    margin-left: 20px;
+  }
+
+  .addBtn {
+    @include btn;
+    background: $font-primary;
+    color: #fff;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .removeBtn {
+    @include btn;
+    color: $font-secondary;
+    background: #fff0f1;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

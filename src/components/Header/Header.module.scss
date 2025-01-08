@@ -1,0 +1,47 @@
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  height: 70px;
+
+  .logo {
+    display: flex;
+    min-width: 50px;
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .message {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    flex-basis: 100%;
+    border-radius: 50px;
+    height: 70px;
+
+    .messageText {
+      flex: 1;
+    }
+
+    .contactIcon {
+      padding: 10px;
+      margin: 0 10px 0 auto;
+      border-radius: 25px;
+      background-color: #f0eded;
+
+      img {
+        width: 25px;
+      }
+    }
+
+    .userName {
+      color: #6e468f;
+      font-weight: bold;
+    }
+  }
+}
+
+
