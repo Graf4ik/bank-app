@@ -1,8 +1,9 @@
 import styles from "./LoginForm.module.scss";
-import {observer} from "mobx-react-lite";
+import { observer } from "mobx-react-lite";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import {Button, Form, Input} from "antd";
+import { Button, Form, Input } from "antd";
 import authStore from "@/stores/authStore.ts";
+import React from "react";
 
 export const LoginForm: React.FunctionComponent = observer(() => {
 
@@ -18,41 +19,44 @@ export const LoginForm: React.FunctionComponent = observer(() => {
     }
 
     return (
-        <>
-            <div className={styles.login}>
-                <h2>Login</h2>
+        <div className={styles.container}>
+            <div className={styles.formWrapper}>
+                <h2 className={styles.title}>Login</h2>
                 <Form onFinish={handleSubmit(onSubmit)} layout="vertical">
-                    {/* Поле Email с добавлением валидации */}
                     <Form.Item
                         label="Email"
                         validateStatus={errors.email ? 'error' : ''}
                         help={errors.email?.message}
+                        className={styles.inputBox}
                     >
                         <Input
                             type="email"
+                            placeholder="Enter Your Email"
                             {...register('email')}
+                            className={styles.input}
                         />
                     </Form.Item>
 
-                    {/* Поле Password с добавлением валидации */}
                     <Form.Item
                         label="Password"
                         validateStatus={errors.password ? 'error' : ''}
                         help={errors.password?.message}
+                        className={styles.inputBox}
                     >
                         <Input.Password
+                            placeholder="Enter Your Password"
                             {...register('password')}
+                            className={styles.input}
                         />
                     </Form.Item>
 
-                    {/* Кнопка отправки */}
-                    <Form.Item>
-                        <Button type="primary" htmlType="submit">
+                    <Form.Item className={styles.buttonContainer}>
+                        <Button type="primary" htmlType="submit" className={styles.submitButton}>
                             Login
                         </Button>
                     </Form.Item>
                 </Form>
             </div>
-        </>
+        </div>
     );
 });

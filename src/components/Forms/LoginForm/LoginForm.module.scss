@@ -1,18 +1,86 @@
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.container {
+  background: #fff;
+  max-width: 350px;
   width: 100%;
-  height: 100vh;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
 
-  .form {
-    input {
-      padding: 10px;
+.formWrapper {
+  width: 100%;
+}
 
-      &[type="password"] {
-        margin: 35px 0;
-      }
-    }
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #d89eff 0%, #c1d2ff 100%);
   }
 }
+
+.inputBox {
+  width: 100%;
+  margin-top: 25px;
+  position: relative;
+}
+
+.input {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: #f9f9f9;
+
+    &:focus {
+      outline: none;
+      border-color: #a5b3ff;
+    }
+
+    &::placeholder {
+      color: #aaa;
+    }
+
+    &:focus::placeholder {
+      color: #a5b3ff;
+    }
+}
+
+.buttonContainer {
+  margin-top: 30px;
+}
+
+.submitButton {
+  background: linear-gradient(to right, #c1d2ff 0%, #a5b3ff 100%);
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(to left, #c1d2ff 0%, #a5b3ff 100%);
+    letter-spacing: 1px;
+  }
+}
+
+
+
+
+
+
+
