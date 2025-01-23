@@ -23,7 +23,6 @@ export const LoginForm: React.FunctionComponent = observer(() => {
             <div className={styles.formWrapper}>
                 <h2 className={styles.title}>Login</h2>
                 <Form onFinish={handleSubmit(onSubmit)} layout="vertical">
-                    {/* Поле Email */}
                     <Form.Item
                         label="Email"
                         validateStatus={errors.email ? 'error' : ''}
@@ -38,7 +37,6 @@ export const LoginForm: React.FunctionComponent = observer(() => {
                         />
                     </Form.Item>
 
-                    {/* Поле Password */}
                     <Form.Item
                         label="Password"
                         validateStatus={errors.password ? 'error' : ''}
@@ -52,7 +50,6 @@ export const LoginForm: React.FunctionComponent = observer(() => {
                         />
                     </Form.Item>
 
-                    {/* Кнопка отправки */}
                     <Form.Item className={styles.buttonContainer}>
                         <Button type="primary" htmlType="submit" className={styles.submitButton}>
                             Login

@@ -1,13 +1,17 @@
 @import './mixins.scss';
 @import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-body {
+html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif, 'Poppins';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #F5F5F5;
+    background: linear-gradient(to bottom, #e6a1ff 0%, #a5b3ff 100%);
   }
   
   * {
